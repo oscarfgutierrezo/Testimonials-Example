@@ -515,6 +515,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .max-w-\[970\]{
   max-width: 970;
 }
@@ -533,6 +537,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[370px\]{
   max-width: 370px;
+}
+
+.max-w-7xl{
+  max-width: 80rem;
+}
+
+.max-w-\[980px\]{
+  max-width: 980px;
 }
 
 .shrink-0{
@@ -555,6 +567,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
 .gap-10{
   gap: 2.5rem;
 }
@@ -567,8 +583,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.75rem;
 }
 
+.gap-14{
+  gap: 3.5rem;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
 .border{
   border-width: 1px;
+}
+
+.border-2{
+  border-width: 2px;
 }
 
 .border-y{
@@ -584,6 +616,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-grey{
   --tw-border-opacity: 1;
   border-color: rgb(235 234 237 / var(--tw-border-opacity));
+}
+
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-opacity-10{
+  --tw-border-opacity: 0.1;
+}
+
+.bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 24 147 / var(--tw-bg-opacity));
+}
+
+.bg-dark-violet{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 14 98 / var(--tw-bg-opacity));
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-5{
@@ -625,6 +680,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
+.pb-4{
+  padding-bottom: 1rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -661,8 +720,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(21 20 57 / var(--tw-text-opacity));
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-opacity-40{
   --tw-text-opacity: 0.4;
+}
+
+.text-opacity-30{
+  --tw-text-opacity: 0.3;
+}
+
+.text-opacity-0{
+  --tw-text-opacity: 0;
 }
 
 .divider {
@@ -718,21 +790,83 @@ Ensure the default browser behavior of the `hidden` attribute.
     align-items: flex-start;
   }
 
+  .sm\:p-10{
+    padding: 2.5rem;
+  }
+
+  .sm\:p-9{
+    padding: 2.25rem;
+  }
+
   .sm\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+
+  .sm\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .sm\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .sm\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .sm\:py-14{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .sm\:px-9{
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .sm\:py-7{
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
 }
 
 @media (min-width: 768px){
+  .md\:max-w-\[470px\]{
+    max-width: 470px;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:items-start{
+    align-items: flex-start;
+  }
+
   .md\:gap-10{
     gap: 2.5rem;
   }
 }
 
 @media (min-width: 1024px){
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:h-\[288px\]{
+    height: 288px;
+  }
+
   .lg\:max-w-\[470px\]{
     max-width: 470px;
+  }
+
+  .lg\:max-w-\[450px\]{
+    max-width: 450px;
   }
 
   .lg\:flex-row{
@@ -741,6 +875,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:items-start{
     align-items: flex-start;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
+  }
+
+  .lg\:justify-between{
+    justify-content: space-between;
   }
 
   .lg\:gap-14{
@@ -767,13 +909,34 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 7rem;
   }
 
+  .lg\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:text-left{
     text-align: left;
   }
 }
 
 @media (min-width: 1280px){
+  .xl\:h-\[237px\]{
+    height: 237px;
+  }
+
   .xl\:max-w-\[470px\]{
     max-width: 470px;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:items-start{
+    align-items: flex-start;
+  }
+
+  .xl\:text-left{
+    text-align: left;
   }
 }
